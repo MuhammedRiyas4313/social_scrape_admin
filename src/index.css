@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Social Media Analyzer Design System - Beautiful gradients and modern colors */
+
+@layer base {
+  :root {
+    /* Core brand colors - Cyan & Blue theme for social media feel */
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Beautiful gradient primary colors */
+    --primary: 194 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 194 100% 65%;
+
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+
+    /* Sentiment analysis colors */
+    --positive: 142 76% 36%;
+    --neutral: 213 27% 84%;
+    --negative: 0 84% 60%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 194 100% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(194 100% 45%), hsl(194 100% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 14.3% 95.9%), hsl(210 40% 98%));
+    --gradient-background: linear-gradient(180deg, hsl(210 40% 98%) 0%, hsl(220 14.3% 95.9%) 100%);
+    
+    /* Shadows with brand color */
+    --shadow-primary: 0 10px 30px -10px hsl(194 100% 45% / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(220 13% 91% / 0.4);
+    --shadow-glow: 0 0 40px hsl(194 100% 65% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme with same branding but inverted */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 217.2 32.6% 17.5%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217.2 32.6% 17.5%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Keep brand colors but adjust for dark theme */
+    --primary: 194 100% 55%;
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 194 100% 75%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Sentiment colors - adjusted for dark theme */
+    --positive: 142 71% 45%;
+    --neutral: 213 20% 55%;
+    --negative: 0 84% 65%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 194 100% 55%;
+
+    /* Dark theme gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(194 100% 55%), hsl(194 100% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(217.2 32.6% 17.5%), hsl(222.2 84% 4.9%));
+    --gradient-background: linear-gradient(180deg, hsl(222.2 84% 4.9%) 0%, hsl(217.2 32.6% 17.5%) 100%);
+    
+    /* Dark theme shadows */
+    --shadow-primary: 0 10px 30px -10px hsl(194 100% 55% / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 40px hsl(194 100% 75% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
